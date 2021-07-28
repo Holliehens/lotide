@@ -1,9 +1,9 @@
-const assertEqual = function(actual, expected) {
+const assertEqual = function(param1, param2) {
 
-  if (eqArrays(actual, expected)) {
-    console.log(`✅ ✅ ✅ Assertion Passed: ${actual}  ===  ${expected}`);
+  if (eqArrays(param1, param2)) {
+    console.log(`✅ ✅ ✅ Assertion Passed: ${param1}  ===  ${param2}`);
   } else {
-    console.log(`🚫 🚫 🚫Assertion Failed: ${actual} !== ${expected}`);
+    console.log(`🚫 🚫 🚫Assertion Failed: ${param1} !== ${param2}`);
   }
 
 
