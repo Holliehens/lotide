@@ -27,31 +27,21 @@ const eqArrays = function(array1, array2) {
   return true;  
 };
 
-// const flatten = function(array) {
-//   let newArray = [].concat.apply([], array);
-//   console.log(newArray);
-//   return newArray;
- 
-//    };
-
-
-
-//flatten([1, 2, [3, 4], 5, [6]]) // => [1, 2, 3, 4, 5, 6]
 
 
 const flatten = function(array) {
   let newArray = [];
   array.forEach(function(element) {
     if (!Array.isArray(element)) {
-      newArray.push(element)
+      newArray.push(element);
     } else {
       element.forEach(function(innerElement) {
-        newArray.push(innerElement)
-      })
+        newArray.push(innerElement);
+      });
     }
-  })
-  // return newArray;
-  console.log(newArray);
-}
+  });
+  return newArray;
+  
+};
 
-flatten([1, 2, [3, 4], 5, [6]]) // => [1, 2, 3, 4, 5, 6]
+flatten([1, 2, [3, 4], 5, [6]]); // => [1, 2, 3, 4, 5, 6]
