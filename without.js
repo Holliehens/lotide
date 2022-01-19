@@ -42,7 +42,7 @@ const without = function(source, itemsToRemove) {
       newArray.push(source[j]);
     }
   } 
-  console.log(newArray);
+  
   return newArray;
 
 };
